@@ -1,0 +1,27 @@
+#TODO
+
+1. To correct make file call order (some files are called twice). This does not cause error, but still.
+2. Discover real scatter and partition sizes
+3. Some proprietary binaries are not added. Check /system/ partition on a running device agagin
+4. Add lines declaring usage of custom MTK libraries (rild-mtk.so or so)
+
+
+!!!!10. substitute build.prop when finished generating image
+
+
+done 4. Include all proprietary in etc, lib, vendor ...
+done 9. check app permissions
+done 5. mediatek property files
+done 10. make changes to build/core/main.mk - comment check of java version
+
+no need 2. Include usefull lenovo stuff - access point APK, for example
+no need 3. Include recovery, ramheaders, cache (?)
+no need 6. custombootimg.mk
+no need 8. recovery_fstab
+
+check out:
+7. guess include MtkBt.apk and .odex, MediaTekLocationProvider.apk etc...from /system/app
+	- perhaps this has an influence on a bluetooth
+
+1. Check mk-file order (are all the makefiles get called?) 
+	- definetely there's double call of some makefiles

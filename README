@@ -1,0 +1,16 @@
+This is a config set for the latest 4.0.4 aosp for Lenovo A800 device
+
+Notice: build is successfull, still fail to run generated system.img on a device (need to discover bootstrap details and adjust *PARTITION_SIZE)
+Also, there's TODO file, listing current tasks to be done before successfully running on device.
+
+
+Parts of this tree are derived from:
+https://github.com/Nikolas-LFDesigns/cm_device_lenovo_P700i
+
+Build using old repo:
+http://commondatastorage.googleapis.com/git-repo-downloads/repo
+
+Checkout commands:
+cd aosp-4.0.4
+repo init -u https://android.googlesource.com/platform/manifest.git -b android-4.0.4_r2.1
+repo sync
